@@ -1,0 +1,39 @@
+.social-button {
+    gap: 12px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    transition: 0.2s ease-in-out;
+    background: var(--gray-300, #292C34);
+    border: 2px solid var(--gray-300, #292C34);
+    max-width: 400px;
+    text-decoration: none;
+}
+
+.social-button:hover {
+    border: 2px solid var(--blue, #3996DB);
+}
+
+.social-button:hover .social-button--icon-media {
+    filter: brightness(0) saturate(100%) invert(51%) sepia(90%) saturate(1113%) hue-rotate(180deg) brightness(90%) contrast(89%);
+}
+
+.social-button--text {
+    flex: 1;
+    color: var(--gray-500, #C0C4CE);
+}
+
+.social-button--icon-media {
+    width: 28px;
+    height: 28px;
+    transition: 0.1s ease-in;
+}
+.social-button--icon-arrow {
+    width: 20px;
+    height: 20px;
+    transition: 0.2s ease-in-out;
+    filter: brightness(0) saturate(100%) invert(51%) sepia(90%) saturate(1113%) hue-rotate(180deg) brightness(90%) contrast(89%);
+}

@@ -1,0 +1,20 @@
+.tag-size-md,
+.tag-size-sm {
+    width: fit-content;
+    text-align: center;
+}
+.tag-size-md {
+    padding: 8px 12px;
+    border-radius: 12px;
+}
+.tag-size-sm {
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.tag-color-black {
+    color: var(--gray-200, #16181D);
+}
+.tag-color-white {
+    color: var(--gray-600, #E2E4E9);
+}

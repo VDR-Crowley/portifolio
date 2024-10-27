@@ -1,0 +1,61 @@
+.card-project {
+    padding: 16px;
+    border-radius: 12px;
+    background-color: var(--gray-300);
+    border: 2px solid var(--gray-300);
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    display: flex;
+    gap: 16px;
+    width: 100%;
+}
+
+.card-project:hover {
+    border: 2px solid var(--gray-400);
+}
+
+.card-project--img {
+    width: 100%;
+    max-width: 224px;
+    max-height: 156px;
+    border-radius: 8px;
+    background-color: var(--gray-200);
+}
+@media (max-width: 650px) {
+    .card-project {
+        flex-direction: column;
+    }
+
+    .card-project--img {
+        max-width: 100%;
+        height: 156px;
+    }
+}
+
+.card-project--area-description {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+
+.card-project--info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-project--title {
+    color: var(--gray-600);
+    font-variant: small-caps;
+}
+
+.card-project--description {
+    color: var(--gray-500);
+}
+
+.card-project--group-tags {
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}

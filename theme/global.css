@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--gray-500);
+}
+
+.background-dark {
+    background: var(--gray-200, #16181D);
+}
+
+.title-sm, .title-md, .title-lg {
+    font-weight: 700;
+    font-family: "Asap", sans-serif;
+}
+.title-lg {
+    font-size: var(--font-title-size-lg, 56px);
+    line-height: var(--font-title-leaning-lg, 120%);
+}
+.title-md {
+    font-size: var(--font-title-size-md, 24px);
+    line-height: var(--font-title-leaning-md, 120%);
+}
+.title-sm {
+    font-size: var(--font-title-size-sm, 16px);
+    line-height: var(--font-title-leaning-sm, 120%);
+}
+
+.subtitle, .font-tag-md, .font-tag-sm {
+    font-weight: 700;
+    font-family: "Inconsolata", serif;
+}
+.subtitle {
+    font-weight: 400;
+    font-size: var(--font-subtitle-size-lg, 20px);
+    line-height: var(--font-subtitle-leaning-lg, 120%);
+}
+.font-tag-md {
+    font-size: var(--font-tag-size-md, 16px);
+    line-height: var(--font-tag-leaning-md, 120%);
+}
+.font-tag-sm {
+    font-size: var(--font-tag-size-sm, 12px);
+    line-height: var(--font-tag-leaning-sm, 120%);
+}
+
+.font-text-md, .font-text-sm {
+    font-weight: 400;
+    font-family: "Maven Pro", serif;
+}
+.font-text-md {
+    font-size: var(--font-text-size-md, 16px);
+    line-height: var(--font-text-leaning-md, 140%);
+}
+.font-text-sm {
+    font-size: var(--font-text-size-sm, 12px);
+    line-height: var(--font-text-leaning-sm, 140%);
+}
+
+.bg-red {
+    background: var(--red, #292C34);
+}
+.bg-purble {
+    background: var(--purble, #292C34);
+}
+.bg-blue {
+    background: var(--blue, #292C34);
+}
+.bg-green {
+    background: var(--green, #292C34);
+}
+.bg-yellow {
+    background: var(--yellow, #292C34);
+}
+
+.text-red {
+    color: var(--red, #292C34);
+}
+.text-purble {
+    color: var(--purble, #292C34);
+}
+.text-blue {
+    color: var(--blue, #292C34);
+}
+.text-green {
+    color: var(--green, #292C34);
+}
+.text-yellow {
+    color: var(--yellow, #292C34);
+}
