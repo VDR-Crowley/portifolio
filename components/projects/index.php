@@ -4,7 +4,7 @@
     $projects = [
         [
             'name' => 'Project 1',
-            'src' => '',
+            'src' => '../../assets/images/projects/image.svg',
             'description' => 'Lorem ipsum dolor sit amet consectetetur. Viverra sed laoreet eu ornare.',
             'stack' => [
                 [
@@ -35,7 +35,7 @@
         ],
         [
             'name' => 'Project 2',
-            'src' => '',
+            'src' => '../../assets/images/projects/image-1.svg',
             'description' => 'Lorem ipsum dolor sit amet consectetetur. Viverra sed laoreet eu ornare.',
             'stack' => [
                 [
@@ -66,7 +66,7 @@
         ],
         [
             'name' => 'Project 3',
-            'src' => '',
+            'src' => '../../assets/images/projects/image-2.svg',
             'description' => 'Lorem ipsum dolor sit amet consectetetur. Viverra sed laoreet eu ornare.',
             'stack' => [
                 [
@@ -97,7 +97,7 @@
         ],
         [
             'name' => 'Project 4',
-            'src' => '',
+            'src' => '../../assets/images/projects/image-3.png',
             'description' => 'Lorem ipsum dolor sit amet consectetetur. Viverra sed laoreet eu ornare.',
             'stack' => [
                 [
@@ -128,7 +128,7 @@
         ],
         [
             'name' => 'Project 5',
-            'src' => '',
+            'src' => '../../assets/images/projects/Thumbnail_Project-04.svg',
             'description' => 'Lorem ipsum dolor sit amet consectetetur. Viverra sed laoreet eu ornare.',
             'stack' => [
                 [
@@ -159,7 +159,7 @@
         ],
         [
             'name' => 'Project 6',
-            'src' => '',
+            'src' => '../../assets/images/projects/Thumbnail_Project-05.svg',
             'description' => 'Lorem ipsum dolor sit amet consectetetur. Viverra sed laoreet eu ornare.',
             'stack' => [
                 [
@@ -190,7 +190,7 @@
         ],
         [
             'name' => 'Project 6',
-            'src' => '',
+            'src' => '../../assets/images/projects/Thumbnail_Project-06.svg',
             'description' => 'Lorem ipsum dolor sit amet consectetetur. Viverra sed laoreet eu ornare.',
             'stack' => [
                 [
@@ -224,13 +224,15 @@
 
 <?php foreach ($projects as $project) : ?>
     <a href="#" class="card-project">
-        <span class="card-project--img"></span>
+        <span class="card-project--img">
+            <img src="<?php echo $project['src'];?>" alt="Print do projeto <?php echo $project['name'];?>" />
+        </span>
 
         <span class="card-project--area-description">
             <div class="card-project--info">
-                <h3 class="card-project--title title-sm">Title</h3>
+                <h3 class="card-project--title title-sm"><?= $project['name'] ?></h3>
                 <p class="card-project--description font-text-sm">
-                    Lorem ipsum dolor sit amet consectetetur. Viverra sed laoreet eu ornare.
+                    <?= $project['description'] ?>
                 </p>
             </div>
 

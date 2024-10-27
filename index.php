@@ -61,7 +61,9 @@
         <div class="container">
             <div class="area-infos">
                 <div class="area-infos--photo">
-                    <div class="img"></div>
+                    <div class="container-img">
+                        <img src="/assets/images/me.jpg" alt="Foto do Vando"></img>
+                    </div>
                 </div>
                 <div class="area-infos--me">
                     <h4 class="subtitle">Hello World! Meu nome é <span class="text-red"><?= $user['name'] ?></span> e sou</h4>
