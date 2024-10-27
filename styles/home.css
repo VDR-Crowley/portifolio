@@ -22,24 +22,31 @@
 
 .header .area-infos {}
 
+.area-infos--photo-container {
+    position: relative;
+}
+
 .header .area-infos--photo {
     width: 96px;
     height: 96px;
     border-radius: 50%;
-    border: 1px solid var(--red);
+    border: 1px solid #7B42BC;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto 56px;
+    z-index: 2;
+    position: relative;
 }
 
 .header .area-infos--photo .container-img {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
-    background: var(--gray-100);
     overflow: hidden;
+    background: var(--gray-200);
+    border: 4px solid var(--gray-200);
 }
 
 .header .area-infos--photo .container-img img {
@@ -157,7 +164,54 @@
 }
 
 #footer .container {
-    /*max-width: ;*/
     padding: 12px 24px;
 }
 
+
+
+.react-logo {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+    width: 180px;
+    height: 80px;
+    border: 2px solid #7B42BC;
+    background: radial-gradient(circle, #7B42BC 48%, transparent 50%) no-repeat center center;
+    background-size: 10px 100%;
+    border-radius: 50%;
+    opacity: 0.2;
+    animation: rotate 5s linear infinite;
+}
+
+.react-logo::before,
+.react-logo::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    border-radius: 50%;
+    border: 2px solid #7B42BC;
+    width: 180px;
+    height: 80px;
+}
+
+.react-logo::before {
+    left: -2px;
+    transform: rotate(60deg);
+}
+
+.react-logo::after {
+    right: -2px;
+    transform: rotate(-60deg);
+}
+
+@keyframes rotate {
+    from {
+        transform: translateY(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateY(-50%) rotate(360deg);
+    }
+}

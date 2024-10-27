@@ -60,9 +60,13 @@
     <header class="header">
         <div class="container">
             <div class="area-infos">
-                <div class="area-infos--photo">
-                    <div class="container-img">
-                        <img src="/assets/images/me.jpg" alt="Foto do Vando"></img>
+
+                <div class="area-infos--photo-container">
+                    <div class="react-logo"></div>
+                    <div class="area-infos--photo">
+                        <div class="container-img">
+                            <img src="/assets/images/me.jpg" alt="Foto do Vando"></img>
+                        </div>
                     </div>
                 </div>
                 <div class="area-infos--me">
